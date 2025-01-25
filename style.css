@@ -1,0 +1,52 @@
+body{
+    background-color: #363636;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #21212183;
+    border-radius: 50px;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5%;
+}
+.nom, .service, .temps, .priorite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h1{
+    text-align: center;
+    color: rgb(55, 145, 72);
+}
+h2{
+    color: rgb(48, 125, 62);
+}
+
+#submitbtn{
+    background-color: rgb(55, 145, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+#submitbtn:hover{
+    background-color: rgb(48, 125, 62);
+}
+#servir-client{
+    background-color: rgb(55, 145, 72);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+#servir-client:hover{
+    background-color: rgb(48, 125, 62);
+}

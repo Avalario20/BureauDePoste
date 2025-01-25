@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bureau de poste</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bureau de poste</h1>
+        <form method="post">
+            <div class="nom">
+                <h2>Nom</h2>
+                <input type="text" name="nom" required>
+            </div>
+            <div class="service">
+                <h2>Service</h2>
+                <div class="service_radio">
+                <input type="radio" name="service" value="envois" required> 
+                <label>Envois</label>
+                <input type="radio" name="service" value="retrait" required> 
+                <label>Retrait</label>
+                <input type="radio" name="service" value="payement" required> 
+                <label>Paiement</label>
+            </div>
+            <div class="temps">
+                <h2>Temps d'attente</h2>
+                <input type="number" name="temps" required>
+            </div>
+
+            <div class="priorite">
+                <h2>Priorité</h2>
+                <div class="priorite_radio">
+                <input type="radio" name="priorite" value="oui" required> Oui
+                <input type="radio" name="priorite" value="non" required> Non
+            </div>
+
+            <input id="submitbtn" type="submit" value="Ajouter à la file">
+        </form>
+
+        <h3>File d'attente :</h3>
+        <ul id="file-attente"></ul>
+
+        <button id="servir-client">Servir un client</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
